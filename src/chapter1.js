@@ -85,3 +85,5 @@ let user ={
 user.employed= true;
 user.name = 'Rocko';
 console.log(user);
+
+// Chapter 1.3 learning
