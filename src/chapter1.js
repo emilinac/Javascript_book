@@ -1,3 +1,4 @@
+// Chapter 1.2 learning
 // // lexical scoping with const
 // const num = 10;
 // function firstFun(){
