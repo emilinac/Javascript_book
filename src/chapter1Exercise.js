@@ -97,3 +97,29 @@ console.log(cookies); // 99
 for (let i = 0; i <= 10; i++){
     console.log(++i);
 } // 1,3,5,7,9,11
+
+// 5.
+let num1 = 100;
+let num2 = 30;
+let num3 = 80;
+num1 = num2 = num3;
+console.log(num3, num2, num1); // 80, 80, 80
+
+// 6.
+let x = 10;
+let y = 20;
+x+= y*= 3
+console.log(x); // 70
+
+// 7. the first difference is that unlike the == that only requires to have the same value the === also requires to be the same type, like a number. the second difference is that
+
+8.
+let x;
+let y = 10;
+console.log(x !== y); // true
+
+// 9.
+let x = 0
+let y = false;
+console.log(x === y);
+console.log(x == y);

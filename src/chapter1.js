@@ -102,3 +102,21 @@ let num2 = 30;
 let num3 = 80;
 let num = num1 - num2 + num3;
 
+// Strict equality (===) and strict inequality (!==) operators
+
+let num1 = 10;
+let num2 = "10";
+typeof (num1); // number
+typeof (num2); // string
+num1 === num2; // false
+num1 !== num2; // true
+
+// Loose equality (==) and inequality (!=) operators
+
+let num1 = 10;
+let num2 = "10";
+console.log(num1 == num2); // true
+console.log(num1 != num2); // false
+
+//
+
