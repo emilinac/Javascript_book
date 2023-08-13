@@ -119,16 +119,17 @@
 // console.log(x !== y); // true
 
 // 9.
-let x = 0;
-let y = false;
-console.log(x === y); // false
-console.log(x == y); // true
+// let x = 0;
+// let y = false;
+// console.log(x === y); // false
+// console.log(x == y); // true
+//
+// // 10.
+// let x = true;
+// let y = false;
+// console.log(x === y); // false
+// console.log(x == y); // false
+//
+// // 11.
+// Symbol() === Symbol(); // false
 
-// 10.
-let x = true;
-let y = false;
-console.log(x === y); // false
-console.log(x == y); // false
-
-// 11.
-Symbol() === Symbol(); // false
