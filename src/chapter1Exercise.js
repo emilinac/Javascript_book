@@ -134,3 +134,31 @@
 // Symbol() === Symbol(); // false
 
 // 12.
+let a =  true;
+let b = 0;
+let result = a && b;
+console.log(result); // 0
+
+// 13.
+let x = {
+    fruit: 'lemon'
+}
+let y = {
+    juice:'mango'
+}
+console.log(x && y); // { juice: 'mango' }
+
+// 14.
+let username = "Emilina";
+function createUser() {
+    if (username.length >= 6 && username.trim('')) {
+        return true;
+    } else {
+        return false;
+    }
+}
+createUser();
+
+// 15. the invasion !('') is an empty string that ius also a falsy value of true
+
+// 16.
