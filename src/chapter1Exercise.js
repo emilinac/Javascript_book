@@ -162,21 +162,39 @@
 // 15. the invasion !('') is an empty string that ius also a falsy value of true
 
 // 16.
-const x = "null";
-const y = "Bob";
-function logThis(){
-    if (y === "Bob" && !(x)){
-        console.log("msg1");
-    } else{
-        console.log("msg2");
-    }
-}
-logThis() // msg2 will be logged because the message if false
-
-// 17.
-var a = 2;
-var b = 0;
-var c = a || b;
-console.log(c); //2
+// const x = "null";
+// const y = "Bob";
+// function logThis(){
+//     if (y === "Bob" && !(x)){
+//         console.log("msg1");
+//     } else{
+//         console.log("msg2");
+//     }
+// }
+// logThis() // msg2 will be logged because the message if false
+//
+// // 17.
+// var a = 2;
+// var b = 0;
+// var c = a || b;
+// console.log(c); //2
 
 // 18.
+let user1 = {
+    id: 1
+}
+let user2 = {
+    id: 2
+}
+let user3 = {
+    id: 3
+}
+let x = 10;
+if(x === 10 && typeof(x) === 'number' || !(user1)){
+    console.log(user2 || user3);
+} else{
+    console.log('nope')
+} // id: 2
+
+// 19.
+console.log((undefined || null || 0)); // 0
