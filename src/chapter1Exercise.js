@@ -134,31 +134,49 @@
 // Symbol() === Symbol(); // false
 
 // 12.
-let a =  true;
-let b = 0;
-let result = a && b;
-console.log(result); // 0
+// let a =  true;
+// let b = 0;
+// let result = a && b;
+// console.log(result); // 0
 
 // 13.
-let x = {
-    fruit: 'lemon'
-}
-let y = {
-    juice:'mango'
-}
-console.log(x && y); // { juice: 'mango' }
-
-// 14.
-let username = "Emilina";
-function createUser() {
-    if (username.length >= 6 && username.trim('')) {
-        return true;
-    } else {
-        return false;
-    }
-}
-createUser();
+// let x = {
+//     fruit: 'lemon'
+// }
+// let y = {
+//     juice:'mango'
+// }
+// console.log(x && y); // { juice: 'mango' }
+//
+// // 14.
+// let username = "Emilina";
+// function createUser() {
+//     if (username.length >= 6 && username.trim('')) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// createUser();
 
 // 15. the invasion !('') is an empty string that ius also a falsy value of true
 
 // 16.
+const x = "null";
+const y = "Bob";
+function logThis(){
+    if (y === "Bob" && !(x)){
+        console.log("msg1");
+    } else{
+        console.log("msg2");
+    }
+}
+logThis() // msg2 will be logged because the message if false
+
+// 17.
+var a = 2;
+var b = 0;
+var c = a || b;
+console.log(c); //2
+
+// 18.
