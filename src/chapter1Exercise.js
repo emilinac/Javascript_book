@@ -180,21 +180,21 @@
 // console.log(c); //2
 
 // 18.
-let user1 = {
-    id: 1
-}
-let user2 = {
-    id: 2
-}
-let user3 = {
-    id: 3
-}
-let x = 10;
-if(x === 10 && typeof(x) === 'number' || !(user1)){
-    console.log(user2 || user3);
-} else{
-    console.log('nope')
-} // id: 2
-
-// 19.
-console.log((undefined || null || 0)); // 0
+// let user1 = {
+//     id: 1
+// }
+// let user2 = {
+//     id: 2
+// }
+// let user3 = {
+//     id: 3
+// }
+// let x = 10;
+// if(x === 10 && typeof(x) === 'number' || !(user1)){
+//     console.log(user2 || user3);
+// } else{
+//     console.log('nope')
+// } // id: 2
+//
+// // 19.
+// console.log((undefined || null || 0)); // 0
