@@ -121,31 +121,31 @@
 //
 
 // Logical NOT(!)
-if (!(2 === 'two')){
-    console.log('2 is not strictly equal to two');
-}
-
-// Logical AND (&&)
-let user1 = ''; // empty strings are falsy values
-let user2 = 'TJ';
-console.log(user1 && user2);// "" the log is empty
-
-let num1 = 10;
-let num2 = 20;
-let a = 1;
-let b = 2;
-if (num1 < num2 && a < b){
-    console.log(true);
-} else {
-    console.log(false);
-}
-
-// Logical OR ||
-let breakfast = true;
-let dinner = false;
-console.log(breakfast || dinner); // true will log
-
-let x = false;
-let y = false;
-let z = 0;
-console.log(x || y || z); // 0 will log
+// if (!(2 === 'two')){
+//     console.log('2 is not strictly equal to two');
+// }
+//
+// // Logical AND (&&)
+// let user1 = ''; // empty strings are falsy values
+// let user2 = 'TJ';
+// console.log(user1 && user2);// "" the log is empty
+//
+// let num1 = 10;
+// let num2 = 20;
+// let a = 1;
+// let b = 2;
+// if (num1 < num2 && a < b){
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+//
+// // Logical OR ||
+// let breakfast = true;
+// let dinner = false;
+// console.log(breakfast || dinner); // true will log
+//
+// let x = false;
+// let y = false;
+// let z = 0;
+// console.log(x || y || z); // 0 will log
