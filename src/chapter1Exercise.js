@@ -198,3 +198,27 @@
 //
 // // 19.
 // console.log((undefined || null || 0)); // 0
+
+// 1.3.5
+
+// 1.
+let dessert1 = 'Ice-cream';
+let dessert2 = 'Cupcake';
+let dessert3 = 'Brownie';
+let desserts = `"${dessert1}
+${dessert2}
+${dessert3}"`;
+console.log(desserts);
+
+// 2.
+let payment = function (){
+    num = 2000;
+    function calculate(){
+        let mortagage = "Your mortagage is ";
+        mortagage += num;
+        console.log(mortagage);
+    }
+        calculate()
+
+}
+payment();

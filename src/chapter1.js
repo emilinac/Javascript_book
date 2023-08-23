@@ -153,12 +153,32 @@
 // Concatenation with the addition operator
 let firstName1 = 'Jyoti';
 let lastName1 = 'TJ';
-let greeting1 = 'Hello,' + ' ' + firstName1 + ' ' + lastName1 + 'Welcome!';
-console.log(greeting1);
+let greeting1 = 'Hello,' + ' ' + firstName1 + ' ' + lastName1 + ' Welcome!';
+console.log(greeting1); // Hello, Jyoti TJ Welcome!
 
 
 let firstName2 = 'Jyoti';
 let lastName2 = 'TJ';
 let greeting2 = 'Hello, Welcome ';
 greeting2 += firstName2 + ' and ' + lastName2;
-console.log(greeting2);
+console.log(greeting2); // Hello, Welcome Jyoti and TJ
+
+let num = 30;
+let score = "The score is ";
+score += num;
+console.log(score); // The score is 30
+
+// Template literals
+
+let firstName3 = 'Jyoti';
+let lastName3 = 'TJ';
+let greetings3 = `Hello ${firstName3} ${lastName3} Welcome!`
+console.log(greetings3); // Hello Jyoti TJ Welcome!
+
+let firstName4 = 'Jyoti';
+let lastName4 = 'TJ';
+let fullGreeting = `Hello
+${firstName4}
+${lastName4}
+Welcome!`;
+console.log(fullGreeting);
