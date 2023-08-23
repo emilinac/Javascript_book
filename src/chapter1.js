@@ -156,3 +156,9 @@ let lastName1 = 'TJ';
 let greeting1 = 'Hello,' + ' ' + firstName1 + ' ' + lastName1 + 'Welcome!';
 console.log(greeting1);
 
+
+let firstName2 = 'Jyoti';
+let lastName2 = 'TJ';
+let greeting2 = 'Hello, Welcome ';
+greeting2 += firstName2 + ' and ' + lastName2;
+console.log(greeting2);
