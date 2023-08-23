@@ -149,3 +149,10 @@
 // let y = false;
 // let z = 0;
 // console.log(x || y || z); // 0 will log
+
+// Concatenation with the addition operator
+let firstName1 = 'Jyoti';
+let lastName1 = 'TJ';
+let greeting1 = 'Hello,' + ' ' + firstName1 + ' ' + lastName1 + 'Welcome!';
+console.log(greeting1);
+
