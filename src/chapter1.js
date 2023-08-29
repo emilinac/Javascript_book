@@ -182,3 +182,68 @@ ${firstName4}
 ${lastName4}
 Welcome!`;
 console.log(fullGreeting);
+
+// Void Operator
+
+console.log(void 0); // undefined
+
+<a href="javascript:void(0);" onClick="alert('Page would not reload.')">Hello!</a>
+
+console.log(void 2 == '2'); // false
+console.log(void (2 == '2')); // undefined
+
+// Typeof operator
+
+let users = 10;
+let planet = 'Earth';
+let teamMember = {};
+console.log(typeof (users)); // "number"
+console.log(typeof (planet)); // "string"
+console.log(typeof (teamMember)); // "object"
+
+let nope = null;
+if (nope === null){
+    console.log("null value"); // "null value"
+}
+// simplified
+
+let nope = null;
+console.log(nope); // null
+
+// Typeof Undefined
+
+let x;
+if (x) {
+    console.log(x);
+} else {
+    console.log('Not assigned a value'); // Not assigned a value will be logged
+}
+
+// simplified
+let x;
+console.log(x); // undefined
+
+// typeof being used
+let x;
+if (typeof (x) === 'undefined'){
+    console.log('x is undefined'); // condition is fulfilled
+} else {
+    console.log(' x has a value'); // condition is not fulfilled
+}
+
+// Checking for null and undefined
+
+let y;
+if (typeof y === 'undefined' || y === null) {
+    console.log('y is either undefined or null')
+}else{
+    console.log('y is neither undefined or null')
+}// y is either undefined of null
+
+// Nullish coalescing operator
+const doesExist = 100 ?? null;
+console.log(doesExist); // 100
+
+let num1;
+let num2 = 90;
+console.log(num1 ?? num2);
