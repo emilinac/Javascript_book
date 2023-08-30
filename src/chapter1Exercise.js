@@ -223,3 +223,18 @@
 // }
 // payment();
 
+// 1. what will x1 === x2 result in?
+
+const x1 = 2 * "abc";
+const x2 = 2 * "abc";
+x1 === x2; // false because both x1 and x2 are NaN and NaN cannot equal to itself.
+
+// 2. what will log
+
+console.log(null === undefined); // false because null is an empty value, and it cannot be equals to an undefined value.
+console.log(null == undefined); // false because null is an empty value, and it cannot be equals to an undefined value.
+
+// 3. what will log
+
+console.log(null > 0); // true because null is unknown/empty value, and it could be greater then 0
+console.log(null >= 0); // true because null is unknown/empty value, and it could be greater than or equal to 0
