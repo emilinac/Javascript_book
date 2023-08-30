@@ -151,99 +151,116 @@
 // console.log(x || y || z); // 0 will log
 
 // Concatenation with the addition operator
-let firstName1 = 'Jyoti';
-let lastName1 = 'TJ';
-let greeting1 = 'Hello,' + ' ' + firstName1 + ' ' + lastName1 + ' Welcome!';
-console.log(greeting1); // Hello, Jyoti TJ Welcome!
+// let firstName1 = 'Jyoti';
+// let lastName1 = 'TJ';
+// let greeting1 = 'Hello,' + ' ' + firstName1 + ' ' + lastName1 + ' Welcome!';
+// console.log(greeting1); // Hello, Jyoti TJ Welcome!
+//
+//
+// let firstName2 = 'Jyoti';
+// let lastName2 = 'TJ';
+// let greeting2 = 'Hello, Welcome ';
+// greeting2 += firstName2 + ' and ' + lastName2;
+// console.log(greeting2); // Hello, Welcome Jyoti and TJ
+//
+// let num = 30;
+// let score = "The score is ";
+// score += num;
+// console.log(score); // The score is 30
+//
+// // Template literals
+//
+// let firstName3 = 'Jyoti';
+// let lastName3 = 'TJ';
+// let greetings3 = `Hello ${firstName3} ${lastName3} Welcome!`
+// console.log(greetings3); // Hello Jyoti TJ Welcome!
+//
+// let firstName4 = 'Jyoti';
+// let lastName4 = 'TJ';
+// let fullGreeting = `Hello
+// ${firstName4}
+// ${lastName4}
+// Welcome!`;
+// console.log(fullGreeting);
+//
+// // Void Operator
+//
+// console.log(void 0); // undefined
+//
+// <a href="javascript:void(0);" onClick="alert('Page would not reload.')">Hello!</a>
+//
+// console.log(void 2 == '2'); // false
+// console.log(void (2 == '2')); // undefined
+//
+// // Typeof operator
+//
+// let users = 10;
+// let planet = 'Earth';
+// let teamMember = {};
+// console.log(typeof (users)); // "number"
+// console.log(typeof (planet)); // "string"
+// console.log(typeof (teamMember)); // "object"
+//
+// let nope = null;
+// if (nope === null){
+//     console.log("null value"); // "null value"
+// }
+// // simplified
+//
+// let nope = null;
+// console.log(nope); // null
+//
+// // Typeof Undefined
+//
+// let x;
+// if (x) {
+//     console.log(x);
+// } else {
+//     console.log('Not assigned a value'); // Not assigned a value will be logged
+// }
+//
+// // simplified
+// let x;
+// console.log(x); // undefined
+//
+// // typeof being used
+// let x;
+// if (typeof (x) === 'undefined'){
+//     console.log('x is undefined'); // condition is fulfilled
+// } else {
+//     console.log(' x has a value'); // condition is not fulfilled
+// }
+//
+// // Checking for null and undefined
+//
+// let y;
+// if (typeof y === 'undefined' || y === null) {
+//     console.log('y is either undefined or null')
+// }else{
+//     console.log('y is neither undefined or null')
+// }// y is either undefined of null
+//
+// // Nullish coalescing operator
+// const doesExist = 100 ?? null;
+// console.log(doesExist); // 100
+//
+// let num1;
+// let num2 = 90;
+// console.log(num1 ?? num2);
 
+console.log(typeof (NaN)); // number
+console.log(0 % 0); // NaN
+let infinity;
+console.log(infinity % infinity); // NaN
+console.log('apples'* 2); // NaN
+console.log(NaN * 2); // NaN
+console.log(null > 0); // NaN
 
-let firstName2 = 'Jyoti';
-let lastName2 = 'TJ';
-let greeting2 = 'Hello, Welcome ';
-greeting2 += firstName2 + ' and ' + lastName2;
-console.log(greeting2); // Hello, Welcome Jyoti and TJ
+// checking for NaN
+console.log(Number.isNaN(NaN)); // true
+console.log(Number.isNaN(0/0)); // true
+Number.isNaN(Number.NaN); // true
 
-let num = 30;
-let score = "The score is ";
-score += num;
-console.log(score); // The score is 30
-
-// Template literals
-
-let firstName3 = 'Jyoti';
-let lastName3 = 'TJ';
-let greetings3 = `Hello ${firstName3} ${lastName3} Welcome!`
-console.log(greetings3); // Hello Jyoti TJ Welcome!
-
-let firstName4 = 'Jyoti';
-let lastName4 = 'TJ';
-let fullGreeting = `Hello
-${firstName4}
-${lastName4}
-Welcome!`;
-console.log(fullGreeting);
-
-// Void Operator
-
-console.log(void 0); // undefined
-
-<a href="javascript:void(0);" onClick="alert('Page would not reload.')">Hello!</a>
-
-console.log(void 2 == '2'); // false
-console.log(void (2 == '2')); // undefined
-
-// Typeof operator
-
-let users = 10;
-let planet = 'Earth';
-let teamMember = {};
-console.log(typeof (users)); // "number"
-console.log(typeof (planet)); // "string"
-console.log(typeof (teamMember)); // "object"
-
-let nope = null;
-if (nope === null){
-    console.log("null value"); // "null value"
-}
-// simplified
-
-let nope = null;
-console.log(nope); // null
-
-// Typeof Undefined
-
-let x;
-if (x) {
-    console.log(x);
-} else {
-    console.log('Not assigned a value'); // Not assigned a value will be logged
-}
-
-// simplified
-let x;
-console.log(x); // undefined
-
-// typeof being used
-let x;
-if (typeof (x) === 'undefined'){
-    console.log('x is undefined'); // condition is fulfilled
-} else {
-    console.log(' x has a value'); // condition is not fulfilled
-}
-
-// Checking for null and undefined
-
-let y;
-if (typeof y === 'undefined' || y === null) {
-    console.log('y is either undefined or null')
-}else{
-    console.log('y is neither undefined or null')
-}// y is either undefined of null
-
-// Nullish coalescing operator
-const doesExist = 100 ?? null;
-console.log(doesExist); // 100
-
-let num1;
-let num2 = 90;
-console.log(num1 ?? num2);
+Number.isNaN(20); // false because 20 is a number
+Number.isNaN("hello"); // false because hello is not a number datatype
+Number.isNaN('123')
