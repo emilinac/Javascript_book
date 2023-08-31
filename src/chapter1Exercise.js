@@ -231,10 +231,28 @@ x1 === x2; // false because both x1 and x2 are NaN and NaN cannot equal to itsel
 
 // 2. what will log
 
-console.log(null === undefined); // false because null is an empty value, and it cannot be equals to an undefined value.
-console.log(null == undefined); // false because null is an empty value, and it cannot be equals to an undefined value.
+console.log(null === undefined); // false
+console.log(null == undefined); // true
 
 // 3. what will log
 
-console.log(null > 0); // true because null is unknown/empty value, and it could be greater then 0
-console.log(null >= 0); // true because null is unknown/empty value, and it could be greater than or equal to 0
+console.log(null > 0); // false
+console.log(null >= 0); // true
+
+// 4. explain why its false
+
+console.log(undefined > 0); // false. It is false because undefined is a false statement, and therefore it cannot be greater than 0.
+
+// 5. Will statements inside the if block execute?
+
+let x;
+if(x){
+    // will this return true or false
+} // false because there is no statement attached to x
+
+// 6. what will the typeof operator return?
+
+console.log(typeof (1/10)); // number
+
+// 7. Does the following expression evaluate to true or false?
+Number.isNaN(0); // T or F? false
