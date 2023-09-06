@@ -225,34 +225,81 @@
 
 // 1. what will x1 === x2 result in?
 
-const x1 = 2 * "abc";
-const x2 = 2 * "abc";
-x1 === x2; // false because both x1 and x2 are NaN and NaN cannot equal to itself.
+// const x1 = 2 * "abc";
+// const x2 = 2 * "abc";
+// x1 === x2; // false because both x1 and x2 are NaN and NaN cannot equal to itself.
+//
+// // 2. what will log
+//
+// console.log(null === undefined); // false
+// console.log(null == undefined); // true
+//
+// // 3. what will log
+//
+// console.log(null > 0); // false
+// console.log(null >= 0); // true
+//
+// // 4. explain why its false
+//
+// console.log(undefined > 0); // false. It is false because undefined is a false statement, and therefore it cannot be greater than 0.
+//
+// // 5. Will statements inside the if block execute?
+//
+// let x;
+// if(x){
+//     // will this return true or false
+// } // false because there is no statement attached to x
+//
+// // 6. what will the typeof operator return?
+//
+// console.log(typeof (1/10)); // number
+//
+// // 7. Does the following expression evaluate to true or false?
+// Number.isNaN(0); // T or F? false
 
-// 2. what will log
+// 1. True or False?
 
-console.log(null === undefined); // false
-console.log(null == undefined); // true
+new Number(0); // false
 
-// 3. what will log
+// 2. Name the 6 values that always evaluate to false/falsy
 
-console.log(null > 0); // false
-console.log(null >= 0); // true
+// '', null, undefined, NaN, 0, false
 
-// 4. explain why its false
+// 3. True or false?
 
-console.log(undefined > 0); // false. It is false because undefined is a false statement, and therefore it cannot be greater than 0.
+1 == "1" // true
+1 === "1"; // false
 
-// 5. Will statements inside the if block execute?
+// 4. What will be console.log display in each case?
 
-let x;
-if(x){
-    // will this return true or false
-} // false because there is no statement attached to x
+console.log(false + 1); // 1
+console.log(false == 0); // true
+console.log(false === 0); // false
 
-// 6. what will the typeof operator return?
+// 5. Change the function by adding one symbol only so that "hello world" is logged:
 
-console.log(typeof (1/10)); // number
+let a = 1;
+let b = () => {
+    if(!!(a)){
+        console.log("hello world")
+    }
+}
+b(); // I changed the if(!(a)){ to if(!!(a)){
 
-// 7. Does the following expression evaluate to true or false?
-Number.isNaN(0); // T or F? false
+// 6. Filter this array of values for only truthy values:
+
+const myArr = ["10", 80, true, 0, [], undefined, null, '', NaN]; // const myArr = ["10", 80, true, []];
+
+// 7. Is NaN === NaN true or false and why?
+
+// it is false because NaN cannot be compared to anything and not even itself.
+
+// 8. What values of x and y will be logged to the console?
+
+let x = 0;
+let y = 1;
+if (!(x) == y) {
+    console.log(x);
+} else {
+    console.log(y);
+} // 0 will be logged

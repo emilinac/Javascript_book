@@ -248,19 +248,57 @@
 // let num2 = 90;
 // console.log(num1 ?? num2);
 
-console.log(typeof (NaN)); // number
-console.log(0 % 0); // NaN
-let infinity;
-console.log(infinity % infinity); // NaN
-console.log('apples'* 2); // NaN
-console.log(NaN * 2); // NaN
-console.log(null > 0); // NaN
+// console.log(typeof (NaN)); // number
+// console.log(0 % 0); // NaN
+// let infinity;
+// console.log(infinity % infinity); // NaN
+// console.log('apples'* 2); // NaN
+// console.log(NaN * 2); // NaN
+// console.log(null > 0); // NaN
+//
+// // checking for NaN
+// console.log(Number.isNaN(NaN)); // true
+// console.log(Number.isNaN(0/0)); // true
+// Number.isNaN(Number.NaN); // true
+//
+// Number.isNaN(20); // false because 20 is a number
+// Number.isNaN("hello"); // false because hello is not a number datatype
+// Number.isNaN('123')
 
-// checking for NaN
-console.log(Number.isNaN(NaN)); // true
-console.log(Number.isNaN(0/0)); // true
-Number.isNaN(Number.NaN); // true
+// 1.3.8 Comparison
 
-Number.isNaN(20); // false because 20 is a number
-Number.isNaN("hello"); // false because hello is not a number datatype
-Number.isNaN('123')
+// there are 6 falsy values.  '' empty string, 0, false, null, undefined, NaN. everything else will be truthy. 'false', '10', [] an empty array, {} an empty object, function() an empty function.
+
+if (!(variable)){
+    // statement will execute as !(false) is true
+}
+
+Boolean ({}) // true
+Boolean ([]) // true
+let foo = () => {};
+Boolean (foo); // true
+
+let a = ""; // false
+let b = 0; // false
+let c = []; // true
+console.log(!!(a)); // false
+console.log(!!(b)); // false
+console.log(!!(c)); // true
+
+console.log(null == undefined); // true
+console.log(null == null); // true
+console.log(undefined == undefined); // true
+
+console.log(0 == false); // true
+console.log("" == 0); // true
+console.log("" == false); // true
+
+console.log([] == false); // will return true
+console.log([] == true); // will return false
+
+console.log(false === "") // false
+console.log("" === false) // false
+console.log(null === undefined) // false
+console.log(infinity === infinity); // true
+console.log(false === false); // true
+console.log(true === true); // true
