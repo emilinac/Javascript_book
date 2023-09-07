@@ -259,7 +259,7 @@
 
 // 1. True or False?
 
-new Number(0); // false
+// new Number(0); // false
 
 // 2. Name the 6 values that always evaluate to false/falsy
 
@@ -267,28 +267,28 @@ new Number(0); // false
 
 // 3. True or false?
 
-1 == "1" // true
-1 === "1"; // false
+// 1 == "1" // true
+// 1 === "1"; // false
 
 // 4. What will be console.log display in each case?
 
-console.log(false + 1); // 1
-console.log(false == 0); // true
-console.log(false === 0); // false
+// console.log(false + 1); // 1
+// console.log(false == 0); // true
+// console.log(false === 0); // false
 
 // 5. Change the function by adding one symbol only so that "hello world" is logged:
 
-let a = 1;
-let b = () => {
-    if(!!(a)){
-        console.log("hello world")
-    }
-}
-b(); // I changed the if(!(a)){ to if(!!(a)){
+// let a = 1;
+// let b = () => {
+//     if(!!(a)){
+//         console.log("hello world")
+//     }
+// }
+// b(); // I changed the if(!(a)){ to if(!!(a)){
 
 // 6. Filter this array of values for only truthy values:
 
-const myArr = ["10", 80, true, 0, [], undefined, null, '', NaN]; // const myArr = ["10", 80, true, []];
+// const myArr = ["10", 80, true, 0, [], undefined, null, '', NaN]; // const myArr = ["10", 80, true, []];
 
 // 7. Is NaN === NaN true or false and why?
 
@@ -296,10 +296,10 @@ const myArr = ["10", 80, true, 0, [], undefined, null, '', NaN]; // const myArr 
 
 // 8. What values of x and y will be logged to the console?
 
-let x = 0;
-let y = 1;
-if (!(x) == y) {
-    console.log(x);
-} else {
-    console.log(y);
-} // 0 will be logged
+// let x = 0;
+// let y = 1;
+// if (!(x) == y) {
+//     console.log(x);
+// } else {
+//     console.log(y);
+// } // 0 will be logged
