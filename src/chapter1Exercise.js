@@ -303,3 +303,39 @@
 // } else {
 //     console.log(y);
 // } // 0 will be logged
+
+// 1. what does the following code return?
+
+console.log('41' == 41) // true
+
+// 2. Evaluate the expression 12 * 6 + 'a'. what is its data type?
+
+// the answer is '72a' because once 12 * 6 you get 72 and when you add 72 to a string it becomes a string '72' + 'a' which equals to '72a'
+
+// 3. Evaluate the following. Why do you think the answer is different from question 2?
+
+let a = 'a' + 4 + 7;
+console.log(a); // 'a47' it is different from question 2 because in question 2 the numbers multiplies but here the string is first and any number after that just get added at the end and no addition is happening.
+
+// 4. Explicitly coerce the boolean value false into a string, using the String() function.
+
+console.log(String(false)); // "false"
+
+// 1. What does the following return? If the return value is a string data type, explicitly coerce it into a number
+
+let x = (4 * '4' + +('9')); // "169" will log as a string but in order to change it would have to put it in this format (4 * '4'+ +('9)) then we would get 25 as a number.
+
+// 2. Are the results in A and B different? If so, explain why:
+
+//A.
+console.log(800 + ('8')); // "8008" they are both the same because here there is one string
+//B.
+console.log('800' + +('8')); // "8008" they are both the same because here there are 2 strings not just one
+
+// 3.  Re-write the following expression with numerical values instead of booleans and an empty string.
+
+let x = '';
+let y = true;
+let z = true;
+let result = (x || y <= z); // change to Number((x || y <= z));
+console.log(result) // true before changing to number but 1 after
