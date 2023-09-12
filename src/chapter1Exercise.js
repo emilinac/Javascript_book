@@ -339,3 +339,20 @@
 // let z = true;
 // let result = (x || y <= z); // change to Number((x || y <= z));
 // console.log(result) // true before changing to number but 1 after
+
+// 1. Write a function called boolBlazer which:
+//  Takes 2 parameters x which is a non-boolean and y which is a boolean
+//  Coerce the x parameter by using Number()function
+//  Compares x and y using the equality (==) or inequality (!==) operator
+//  If the comparison returns true, log the statement 'Is equal'
+//  Else if the comparison returns false, log the statement 'Is not equal'
+//  Pass the arguments 'hello' and true call the function to execute it.
+
+function boolBlazer (x,y){
+    if (Number(x) == y){
+        console.log('Is equal');
+    } else {
+        console.log('Is not equal');
+    }
+}
+boolBlazer('hello', true);
