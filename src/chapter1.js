@@ -303,23 +303,23 @@
 // console.log(false === false); // true
 // console.log(true === true); // true
 
-console.log(1+ +('123')); // 124
-console.log(2 * '9'); // 18
-console.log(1 / 'one'); // NaN
-console.log(1 - true); // 0 because in this case true is = to 1 so 1-1=0 if in case was 2 then it would be 2-1=1
-console.log(1 >= false); //true
-console.log(0 == false); // true
+// console.log(1+ +('123')); // 124
+// console.log(2 * '9'); // 18
+// console.log(1 / 'one'); // NaN
+// console.log(1 - true); // 0 because in this case true is = to 1 so 1-1=0 if in case was 2 then it would be 2-1=1
+// console.log(1 >= false); //true
+// console.log(0 == false); // true
 
 
-console.log(Number("10") + 1); // 11
-console.log(Number(true)); // 1
-console.log(Number(false)>= 0); // true
+// console.log(Number("10") + 1); // 11
+// console.log(Number(true)); // 1
+// console.log(Number(false)>= 0); // true
 
-let x =  null;
-console.log(Number(x)); // 0
+// let x =  null;
+// console.log(Number(x)); // 0
 
-let y = NaN;
-console.log(Number(y)); // NaN because it cannot be converted
+// let y = NaN;
+// console.log(Number(y)); // NaN because it cannot be converted
 
-let z = '';
-console.log(Number(z)); // 0
+// let z = '';
+// console.log(Number(z)); // 0
