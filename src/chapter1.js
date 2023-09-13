@@ -1,5 +1,5 @@
 // Chapter 1.2 learning
-// // lexical scoping with const
+// // lexical scoping with const,
 // const num = 10;
 // function firstFun(){
 //     console.log(1 + num);
@@ -12,14 +12,14 @@
 //
 //
 // // re-assigning with var
-// var love = 'Rocko';
+// var love = 'Rock';
 // console.log(love);
-// love = 'Rockster';
+// love = 'Rockstar';
 // console.log(love);
 //
 // // re-declaring with var
-// var love = 'Chuggli';
-// var love = 'Muggli';
+// var love = 'Chugging';
+// var love = 'Muggle';
 // console.log(love);
 //
 // // re-assigning with let
@@ -38,10 +38,10 @@
 //
 // // re-assigning with const is not possible because its only possible is var and let. The value of the property can be changed
 // const user = {
-//     name: "Kauress",
+//     name: "kansas",
 //     age: 100
 // }
-// user.name = "Rocko";
+// user.name = "Rock";
 // console.log(user.name);
 //
 // //re-declaring with const can be re-declared outside their current scope just like let
@@ -66,7 +66,7 @@
 // a = 100;
 // console.log(b);
 
-// There are 7 data types string, number, biglnt(ES6), boolean, null, undefined, symbol(ES6)
+// There are 7 data types string, number, bigint(ES6), boolean, null, undefined, symbol(ES6)
 
 // let num1 = new Number(1);
 // let num2 = num1 + 2;
@@ -84,7 +84,7 @@
 //     role:'developer'
 // }
 // user.employed= true;
-// user.name = 'Rocko';
+// user.name = 'Rock';
 // console.log(user);
 
 // Chapter 1.3 learning
