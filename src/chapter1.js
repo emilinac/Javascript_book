@@ -326,14 +326,14 @@
 
 // Boolean coercion
 
-console.log('Hello World!' == true); // false
-console.log('false' == false); // false
-console.log('' == false); // true
-
-console.log(Boolean('Nintendo')); // true
-console.log(Boolean(0)); // false
-console.log(Boolean({})); // true
-
-console.log(Boolean('Nintendo') <= 10); // true because nintendo is a boolean and the boolean is considered to be 1
+// console.log('Hello World!' == true); // false
+// console.log('false' == false); // false
+// console.log('' == false); // true
+//
+// console.log(Boolean('Nintendo')); // true
+// console.log(Boolean(0)); // false
+// console.log(Boolean({})); // true
+//
+// console.log(Boolean('Nintendo') <= 10); // true because nintendo is a boolean and the boolean is considered to be 1
 
 

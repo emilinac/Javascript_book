@@ -214,9 +214,9 @@
 // let payment = function (){
 //     num = 2000;
 //     function calculate(){
-//         let mortagage = "Your mortagage is ";
-//         mortagage += num;
-//         console.log(mortagage);
+//         let mortgage = "Your mortgage is ";
+//         mortgage += num;
+//         console.log(mortgage);
 //     }
 //         calculate()
 //
@@ -348,11 +348,11 @@
 //  Else if the comparison returns false, log the statement 'Is not equal'
 //  Pass the arguments 'hello' and true call the function to execute it.
 
-function boolBlazer (x,y){
-    if (Number(x) == y){
-        console.log('Is equal');
-    } else {
-        console.log('Is not equal');
-    }
-}
-boolBlazer('hello', true);
+// function boolBlazer (x,y){
+//     if (Number(x) == y){
+//         console.log('Is equal');
+//     } else {
+//         console.log('Is not equal');
+//     }
+// }
+// boolBlazer('hello', true);
