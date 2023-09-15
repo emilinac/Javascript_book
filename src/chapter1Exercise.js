@@ -356,3 +356,59 @@
 //     }
 // }
 // boolBlazer('hello', true);
+
+// 1. Iterate through the numbers 1 to 10, and at each iteration print i.
+
+// for (let i = 1; i <= 10; i++){
+//     console.log(i);
+// }
+
+// 2. Iterate through the numbers 1-5, and at each iteration multiply i by 3
+
+// for (let i = 1; i <= 5; i++){
+//     console.log(i * 3);
+// }
+
+// 3. Can you explain what is happening in the code block below? Notice the semicolon just before the opening curly brace.
+
+// for (var i = 10; i>= 0; i--){
+//     console.log(i);
+// }
+
+// 4. Analyze the following code, and explain why the for-loop does not execute after the first iteration:
+
+// for (const i = 0; i <= 10; i++) {
+//     console.log(i); // 0
+// } // the following code does not work because of const, it doesn't allow it.
+
+// 5. A company has a list of employees and their salary in separate arrays.
+// You are tasked with the job of printing out the name of each employee
+// and the employee’s salary as a string in the format: 'Employee name: Employee salary:'
+
+let employees = ['Lara', 'Sukhi', 'Evee', 'Simi', 'Beno', 'Jay'];
+let employeeSalary = [1000, 1300, 957.89, 3230.14, 750, 13900];
+// for (let i = 0; i < employees.length; i++){
+//     console.log(employees [i] + employeeSalary[i]);
+// }
+
+console.log(employees.length)
+for (let i = 0; i < 6; i++) {
+    console.log(employees[i])
+}
+
+console.log(employeeSalary.length + employees.length);
+console.log(typeof employeeSalary.length)
+
+
+if (employeeSalary.length === employees.length){
+    console.log('Imk cool')
+}
+
+console.log(employees[1])
+console.log(employees.push("Emily"), employeeSalary.push(1000))
+
+for (let i = 0; i < employees.length; i++) {
+    console.log(employees[i] + " " + employeeSalary[i])
+}
+
+

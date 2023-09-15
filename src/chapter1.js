@@ -336,4 +336,13 @@
 //
 // console.log(Boolean('Nintendo') <= 10); // true because nintendo is a boolean and the boolean is considered to be 1
 
+for (let i = 10; i >= 0; i--){
+    console.log(i);
+}
 
+for (let i = 0; i <= 3; i++){
+    for (let j = 0; j <= 2; j++){
+        console.log('Inner loop value of j:' + j);
+    }
+    console.log('Outer loop value of i:' + i);
+}
