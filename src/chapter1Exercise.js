@@ -385,30 +385,47 @@
 // You are tasked with the job of printing out the name of each employee
 // and the employee’s salary as a string in the format: 'Employee name: Employee salary:'
 
-let employees = ['Lara', 'Sukhi', 'Evee', 'Simi', 'Beno', 'Jay'];
-let employeeSalary = [1000, 1300, 957.89, 3230.14, 750, 13900];
+// let employees = ['Lara', 'Sukhi', 'Evee', 'Simi', 'Beno', 'Jay'];
+// let employeeSalary = [1000, 1300, 957.89, 3230.14, 750, 13900];
 // for (let i = 0; i < employees.length; i++){
 //     console.log(employees [i] + employeeSalary[i]);
 // }
 
-console.log(employees.length)
-for (let i = 0; i < 6; i++) {
-    console.log(employees[i])
+// console.log(employees.length)
+// for (let i = 0; i < 6; i++) {
+//     console.log(employees[i])
+// }
+//
+// console.log(employeeSalary.length + employees.length);
+// console.log(typeof employeeSalary.length)
+//
+//
+// if (employeeSalary.length === employees.length){
+//     console.log('Imk cool')
+// }
+//
+// console.log(employees[1])
+// console.log(employees.push("Emily"), employeeSalary.push(1000))
+//
+// for (let i = 0; i < employees.length; i++) {
+//     console.log(employees[i] + " " + employeeSalary[i])
+// }
+
+// 6. Using a nested for-loop print the following pattern:
+
+for (let i = 0; i <= 5; i++){
+    for (let j = 0; j <= i; j++){
+        document.write("*");
+    }
+    document.write('<br>');
 }
 
-console.log(employeeSalary.length + employees.length);
-console.log(typeof employeeSalary.length)
+// 7. Solve for num in the following block of code:
 
-
-if (employeeSalary.length === employees.length){
-    console.log('Imk cool')
+let num = 0;
+for (let i = 0; i <= 2; i++){
+    for (let k = 0; k <= 2; k++){
+        num ++
+    }
 }
-
-console.log(employees[1])
-console.log(employees.push("Emily"), employeeSalary.push(1000))
-
-for (let i = 0; i < employees.length; i++) {
-    console.log(employees[i] + " " + employeeSalary[i])
-}
-
-
+console.log(num); // 9
