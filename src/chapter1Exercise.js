@@ -413,19 +413,41 @@
 
 // 6. Using a nested for-loop print the following pattern:
 
-for (let i = 0; i <= 5; i++){
-    for (let j = 0; j <= i; j++){
-        document.write("*");
-    }
-    document.write('<br>');
-}
+// for (let i = 0; i <= 5; i++){
+//     for (let j = 0; j <= i; j++){
+//         document.write("*");
+//     }
+//     document.write('<br>');
+// }
 
 // 7. Solve for num in the following block of code:
 
-let num = 0;
-for (let i = 0; i <= 2; i++){
-    for (let k = 0; k <= 2; k++){
-        num ++
+// let num = 0;
+// for (let i = 0; i <= 2; i++){
+//     for (let k = 0; k <= 2; k++){
+//         num ++
+//     }
+// }
+// console.log(num); // 9
+
+// 1. Is the following statement true or false?:
+//  A while loop will execute for as till a conditional statement becomes false. // true
+
+// 2. Write the conditional clause in this while loop that will cause the browser window to crash
+
+let x;
+while (true){
+    console.log("Infinite Loop");
+}
+
+// 3. Write a function called magicBall() that will display 3 random numbers to a user. Use a while loop to complete the code.
+
+function magicBall(){
+    let chance = 1;
+    while (chance <= 3) {
+        let magicNumber = Math.floor(Math.random() * 11);
+        chance++;
+        console.log(magicNumber)
     }
 }
-console.log(num); // 9
+magicBall();

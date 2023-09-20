@@ -346,3 +346,13 @@
 //     }
 //     console.log('Outer loop value of i:' + i);
 // }
+
+let x = 0;
+while(x <= 3){
+    console.log(x);
+    x++
+}
+
+while (true){
+    console.log('on no! This loop will crash your browser!')
+}
