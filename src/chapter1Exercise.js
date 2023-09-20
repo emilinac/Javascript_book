@@ -435,19 +435,64 @@
 
 // 2. Write the conditional clause in this while loop that will cause the browser window to crash
 
-let x;
-while (true){
-    console.log("Infinite Loop");
-}
+// let x;
+// while (true){
+//     console.log("Infinite Loop");
+// }
 
 // 3. Write a function called magicBall() that will display 3 random numbers to a user. Use a while loop to complete the code.
 
-function magicBall(){
-    let chance = 1;
-    while (chance <= 3) {
-        let magicNumber = Math.floor(Math.random() * 11);
-        chance++;
-        console.log(magicNumber)
-    }
+// function magicBall(){
+//     let chance = 1;
+//     while (chance <= 3) {
+//         let magicNumber = Math.floor(Math.random() * 11);
+//         chance++;
+//         console.log(magicNumber)
+//     }
+// }
+// magicBall();
+
+
+// my own exercises.
+// 1. Write a while loop to print numbers from 1 to 10. The program should start at 1 and continue printing numbers until it reaches 10.
+
+let x = 1;
+while (x <= 10) {
+    console.log(x);
+    x++
 }
-magicBall();
+
+// 2. Write a program that uses a while loop to calculate the sum of even numbers from 1 to 20.
+// The program should initialize a variable to store the sum, then use a while loop to add the even numbers from 1 to 20 to the sum. Finally, print the sum.
+
+let number = 1;
+let sum = 0;
+
+while (number <= 20) {
+    if (number % 2 === 0) {
+        sum += number;
+    }
+    number++;
+}
+
+console.log("The sum of even numbers from 1 to 20 is: " + sum);
+
+// 3. Write a  program that calculates the factorial of a given number using a while loop.
+// The factorial of a number is the product of all positive integers from 1 to that number.
+
+// steps:
+// Ask the user to enter a positive integer (let's call it n).
+// Initialize a variable (let's call it result) to 1. This variable will store the factorial value.
+// Use a while loop to calculate the factorial. The loop should start at 1 and continue multiplying the result by the current loop variable until the loop variable reaches n.
+// Print the factorial value.
+
+let n = parseInt(prompt('Enter a positive integer:'));
+let results = 1;
+
+let i = 1;
+while (i <= n){
+    results *= i;
+    i++;
+}
+
+console.log(`The factorial value of ${n} is ${results}`);
