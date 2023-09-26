@@ -456,26 +456,26 @@
 // my own exercises.
 // 1. Write a while loop to print numbers from 1 to 10. The program should start at 1 and continue printing numbers until it reaches 10.
 
-let x = 1;
-while (x <= 10) {
-    console.log(x);
-    x++
-}
+// let x = 1;
+// while (x <= 10) {
+//     console.log(x);
+//     x++
+// }
 
 // 2. Write a program that uses a while loop to calculate the sum of even numbers from 1 to 20.
 // The program should initialize a variable to store the sum, then use a while loop to add the even numbers from 1 to 20 to the sum. Finally, print the sum.
 
-let number = 1;
-let sum = 0;
-
-while (number <= 20) {
-    if (number % 2 === 0) {
-        sum += number;
-    }
-    number++;
-}
-
-console.log("The sum of even numbers from 1 to 20 is: " + sum);
+// let number = 1;
+// let sum = 0;
+//
+// while (number <= 20) {
+//     if (number % 2 === 0) {
+//         sum += number;
+//     }
+//     number++;
+// }
+//
+// console.log("The sum of even numbers from 1 to 20 is: " + sum);
 
 // 3. Write a  program that calculates the factorial of a given number using a while loop.
 // The factorial of a number is the product of all positive integers from 1 to that number.
@@ -486,13 +486,61 @@ console.log("The sum of even numbers from 1 to 20 is: " + sum);
 // Use a while loop to calculate the factorial. The loop should start at 1 and continue multiplying the result by the current loop variable until the loop variable reaches n.
 // Print the factorial value.
 
-let n = parseInt(prompt('Enter a positive integer:'));
-let results = 1;
+// let n = parseInt(prompt('Enter a positive integer:'));
+// let results = 1;
+//
+// let i = 1;
+// while (i <= n){
+//     results *= i;
+//     i++;
+// }
+//
+// console.log(`The factorial value of ${n} is ${results}`);
 
-let i = 1;
-while (i <= n){
-    results *= i;
-    i++;
+
+// 1. Code a do-while loop which will print the number 0, five times.
+
+// let x = 0;
+// let times = 0;
+//
+// do {
+//     console.log(x);
+//     times++
+// }
+// while (times < 5);
+
+// 2. Write a do-while loop that will execute once and log a string 'Love and
+// Peace' with the conditional x = false. Do not change the value of x inside
+// the while statement.
+
+// let x = false;
+// do {
+//     console.log('Love and Peace');
+//     x = true;
+// } while (x = false);
+
+// 3. Modify the function in question 2, to infinitely execute a do-while loop. You may change the value of x.
+
+// let x = false;
+// do {
+//     console.log('Love and Peace');
+//     x--
+// } while (x <= 0);
+
+// 4. Write a function that takes x as a parameter. x refers to the number of tickets sold
+// at a local cinema. Within the body of the function use a do-while loop to inform
+// the ticket attendant know how many seats and tickets are available, given a fixed
+// number of seats (30)
+
+
+function ticketSold(x){
+    let availableSeats = 30;
+    let tickets = x;
+    do {
+        availableSeats--
+        tickets--
+        console.log(`available seats: ${availableSeats} 
+        tickets left: ${tickets}`);
+    }while (availableSeats >= 1 && tickets >= 1)
 }
-
-console.log(`The factorial value of ${n} is ${results}`);
+ticketSold(40);

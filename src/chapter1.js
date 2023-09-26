@@ -347,12 +347,38 @@
 //     console.log('Outer loop value of i:' + i);
 // }
 
-let x = 0;
-while(x <= 3){
-    console.log(x);
-    x++
-}
+// let x = 0;
+// while(x <= 3){
+//     console.log(x);
+//     x++
+// }
 
-while (true){
-    console.log('on no! This loop will crash your browser!')
+// while (true){
+//     console.log('on no! This loop will crash your browser!')
+// }
+
+// let loading = 0;
+// while (loading <= 100){
+//     console.log(`The website is still loading! It is curently at ${loading}%`)
+//     loading++
+// }
+// console.log('The website finaly loaded!')
+//
+// for (let i = 5; i >= 1; i--){
+//     if (i % 2 !== 0){
+//         console.log(i);
+//
+//     }
+//     console.log(i);
+// }
+
+// do while statements
+
+function ticketCount(x){
+    do {
+        console.log(`The number of available tickets  left are ${x}`);
+        x--
+    }
+    while (x >= 0);
 }
+ticketCount(10);
