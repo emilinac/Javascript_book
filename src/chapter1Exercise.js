@@ -544,3 +544,40 @@
 //     }while (availableSeats >= 1 && tickets >= 1)
 // }
 // ticketSold(40);
+
+// 1. What is the key difference between the break and continue statements?
+
+// a break will stop the code at the point you chose and continue will stop the code, analyze, skip the point that you chose and continue to the rest of the code.
+
+//2. Print out all odd numbers from 0-10 using the break statement
+for (let i = 0; i <= 10; i++){
+    if (i % 2 === 0){
+        continue;
+    }
+    console.log(i)
+}
+// 3. Iterate over each letter of the 3 letters words in the following array. Logging all the
+// letters in a word on a new line, except for vowels (“a”, “e”, “i”, “o”, “u”). Use a
+// continue statement.
+
+let wordList = [
+    'umbrella',
+    'apple',
+    'paint',
+    'never',
+    'outpost'
+];
+for (let i =0; i < wordList.length; i++) {
+    let currentName = (wordList[i]);
+    for (let j = 0; j < currentName.length; j++) {
+        if (currentName[j] === 'a' ||
+            currentName[j] === 'e' ||
+            currentName[j] === 'i' ||
+            currentName[j] === 'o' ||
+            currentName[j] === 'u')
+        {
+        continue;
+    }
+        console.log(currentName[j]);
+    }
+}
