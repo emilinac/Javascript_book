@@ -159,7 +159,7 @@
 // }
 // createUser();
 
-// 15. the invasion !('') is an empty string that ius also a falsy value of true
+// 15. the invasion !'' is an empty string that ius also a falsy value of true
 
 // 16.
 // const x = "null";
@@ -385,7 +385,7 @@
 // You are tasked with the job of printing out the name of each employee
 // and the employee’s salary as a string in the format: 'Employee name: Employee salary:'
 
-// let employees = ['Lara', 'Sukhi', 'Evee', 'Simi', 'Beno', 'Jay'];
+// let employees = ['Lara', 'Suki', 'Eve', 'Simi', 'Ben', 'Jay'];
 // let employeeSalary = [1000, 1300, 957.89, 3230.14, 750, 13900];
 // for (let i = 0; i < employees.length; i++){
 //     console.log(employees [i] + employeeSalary[i]);
@@ -533,14 +533,14 @@
 // number of seats (30)
 
 
-function ticketSold(x){
-    let availableSeats = 30;
-    let tickets = x;
-    do {
-        availableSeats--
-        tickets--
-        console.log(`available seats: ${availableSeats} 
-        tickets left: ${tickets}`);
-    }while (availableSeats >= 1 && tickets >= 1)
-}
-ticketSold(40);
+// function ticketSold(x){
+//     let availableSeats = 30;
+//     let tickets = x;
+//     do {
+//         availableSeats--
+//         tickets--
+//         console.log(`available seats: ${availableSeats}
+//         tickets left: ${tickets}`);
+//     }while (availableSeats >= 1 && tickets >= 1)
+// }
+// ticketSold(40);

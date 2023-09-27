@@ -359,10 +359,10 @@
 
 // let loading = 0;
 // while (loading <= 100){
-//     console.log(`The website is still loading! It is curently at ${loading}%`)
+//     console.log(`The website is still loading! It is currently at ${loading}%`)
 //     loading++
 // }
-// console.log('The website finaly loaded!')
+// console.log('The website finally loaded!')
 //
 // for (let i = 5; i >= 1; i--){
 //     if (i % 2 !== 0){
@@ -374,11 +374,12 @@
 
 // do while statements
 
-function ticketCount(x){
-    do {
-        console.log(`The number of available tickets  left are ${x}`);
-        x--
-    }
-    while (x >= 0);
-}
-ticketCount(10);
+// function ticketCount(x){
+//     do {
+//         console.log(`The number of available tickets  left are ${x}`);
+//         x--
+//     }
+//     while (x >= 0);
+// }
+// ticketCount(10);
+
