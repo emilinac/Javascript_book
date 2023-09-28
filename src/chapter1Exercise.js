@@ -550,34 +550,130 @@
 // a break will stop the code at the point you chose and continue will stop the code, analyze, skip the point that you chose and continue to the rest of the code.
 
 //2. Print out all odd numbers from 0-10 using the break statement
-for (let i = 0; i <= 10; i++){
-    if (i % 2 === 0){
-        continue;
-    }
-    console.log(i)
-}
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 === 0){
+//         continue;
+//     }
+//     console.log(i)
+// }
 // 3. Iterate over each letter of the 3 letters words in the following array. Logging all the
 // letters in a word on a new line, except for vowels (“a”, “e”, “i”, “o”, “u”). Use a
 // continue statement.
 
-let wordList = [
-    'umbrella',
-    'apple',
-    'paint',
-    'never',
-    'outpost'
-];
-for (let i =0; i < wordList.length; i++) {
-    let currentName = (wordList[i]);
-    for (let j = 0; j < currentName.length; j++) {
-        if (currentName[j] === 'a' ||
-            currentName[j] === 'e' ||
-            currentName[j] === 'i' ||
-            currentName[j] === 'o' ||
-            currentName[j] === 'u')
-        {
-        continue;
-    }
-        console.log(currentName[j]);
-    }
+// let wordList = [
+//     'umbrella',
+//     'apple',
+//     'paint',
+//     'never',
+//     'outpost'
+// ];
+// for (let i =0; i < wordList.length; i++) {
+//     let currentName = (wordList[i]);
+//     for (let j = 0; j < currentName.length; j++) {
+//         if (currentName[j] === 'a' ||
+//             currentName[j] === 'e' ||
+//             currentName[j] === 'i' ||
+//             currentName[j] === 'o' ||
+//             currentName[j] === 'u')
+//         {
+//         continue;
+//     }
+//         console.log(currentName[j]);
+//     }
+// }
+
+// 1. Write the syntax of an if - else block
+
+let x = 10
+
+if (x <= 5){
+    console.log('That is correct');
+}else {
+    console.log('Sorry try again');
 }
+
+// 2. Write a conditional statement that will check if:
+//          1. The undefined and null data types are strictly equal (===) to each other
+//          2. Undefined and null are loosely equal (==) to each other
+
+if (undefined === null) {
+    console.log('They are strictly equal to each other');
+} else if (undefined == null){
+    console.log('They are loosely equal to each other');
+} else{
+    console.log('Neither are correct');
+}
+
+// 3. Code a function that will accept a user’s age as input. The function must log
+// different messages depending on the user’s age. Use if, else if, else
+// statements.
+
+// let age = 45;
+//
+// if (age <= 18){
+//     console.log('Please get a parental permission');
+// } else if (age <= 30){
+//     console.log('You will get an email within seven days');
+// } else if (age <= 40){
+//     console.log('Please check your email in 3 days');
+// } else if (age <= 50){
+//     console.log('Please login in a few hours');
+// } else if (age <= 60){
+//     console.log('You are now enrolled');
+// } else{
+//     console.log('Please continue to login');
+// }
+
+// 4. Refactor the above question (#3) using a switch statement with various cases
+
+let userAge = 45;
+switch (true){
+    case userAge<= 18:
+        console.log('Please get a parental permission');
+        break;
+    case userAge <= 30:
+        console.log('You will get an email within seven days');
+        break;
+    case userAge <= 40:
+        console.log('Please check your email in 3 days');
+        break;
+    case userAge <= 50:
+        console.log('Please login in a few hours');
+        break;
+    case userAge <= 60:
+        console.log('You are now enrolled');
+        break;
+    case userAge <= 61:
+        console.log('Please continue to login');
+        break;
+}
+
+// 5. What is returned from the following code statement?
+
+console.log("0" == false? true: false); // true
+
+// 6. Refactor the following block of code which will check if x is smaller
+// than variables y and z. Change the function in the following ways:
+        // Declare the variables in global scope
+        // Use a ternary operator
+
+// let hawaii = function(){
+//     let x = 10;
+//     let y = 20;
+//     let z= 30;
+//     if (x < y){
+//         console.log('x is smaller than y');
+//     }
+//     if (x < z){
+//         console.log('x is smaller than z');
+//     } else {
+//         return false;
+//     }
+// }
+// hawaii();
+
+let x = 10;
+let y = 20;
+let z= 30;
+x < y? console.log('x is smaller than y'): false;
+x < z? console.log('x is smaller than z'): false;

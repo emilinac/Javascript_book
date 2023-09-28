@@ -384,20 +384,89 @@
 // ticketCount(10);
 
 // console.log("Im here")
-for (let i = 0; i <= 5; i++){
-    console.log(i);
+// for (let i = 0; i <= 5; i++){
+//     console.log(i);
+// }
+//
+// for (let i = 0; i <= 5; i++){
+//     if (i === 3){
+//         break;
+//     }
+//     console.log(i);
+// }
+//
+// for (let i = 1; i <= 5; i++){
+//     if (i === 3){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// conditional statements
+
+// there are 4 conditional statements if, else, else if, switch
+
+let username = document.getElementById('user');
+if (username.value.trim() === ''){
+    alert('Please enter a valid username');
 }
 
-for (let i = 0; i <= 5; i++){
-    if (i === 3){
-        break;
+
+let username1 = document.getElementById('user');
+function checkName() {
+    if (username1.value.trim() === '') {
+        alert('Please enter a valid username');
     }
-    console.log(i);
+    else {
+        alert(`Thanks ${username1.value}`)
+    }
 }
 
-for (let i = 1; i <= 5; i++){
-    if (i === 3){
-        continue;
+let username2 = document.getElementById('user');
+function checkName() {
+    if (username2.value.trim() === '') {
+        alert('Please enter a valid username');
+    } else if (username2.value.length <= 3){
+        alert('Username must be longer than 3 characters')
     }
-    console.log(i);
+    else {
+        alert(`Thanks ${username2.value}`)
+    }
 }
+
+function menuGreeter(){
+    let userChoice = document.getElementById('user');
+    switch (userChoice.value.toLowerCase()) {
+        case 'eggs':
+            console.log('Getting ready for the day eh?');
+            break;
+        case 'pancakes':
+            console.log('Great choice, we serve them with Canadian maple syrup!');
+            break;
+        case 'cereal':
+            alert('On a diet?');
+            break
+        default:
+            alert('Not serving that today');
+    }
+}
+
+function menuGreeter1(){
+    let userChoice = document.getElementById('user');
+    switch (userChoice.value.toLowerCase()) {
+        case 'eggs':
+        case 'pancakes':
+        case 'cereal':
+            console.log('All day breakfast is good!');
+            break
+        default:
+            alert('Not serving that today');
+    }
+}
+
+let pet = 'dog';
+pet === 'dog'? true: false;
+
+let username = 'Emily';
+let greeting = username !== ''? `Hi ${username}` :false
+console.log(greeting)
